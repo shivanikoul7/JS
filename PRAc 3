@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse/Replace/Palindrome</title>
+</head>
+<body>
+    <h2>Operations</h2>
+    Enter the string :
+    <input type="text" id="string"/>
+
+    <h2>Operations</h2>
+    For reverse string:
+    <input type="button" value="Reverse" onclick="RevStr()"/>
+
+    For Replacing string:
+    <input type="button" value="Replace" onclick="RepStr()"/>
+
+    For Palindrome check:
+    <input type="button" value="Palindrome" onclick="PalStr()"/>
+
+    <script>
+        function RevStr(){
+            var str=document.getElementById("string").value;
+            document.write(str.split("").reverse().join(""));
+        }
+        function RepStr(){
+            var str=document.getElementById("string").value;
+            document.write(str.replace("shivani","ABCD"));
+        }
+        function PalStr(){
+            var str=document.getElementById("string").value;
+            var rev=str.split("").reverse().join("");
+            var check=str.localeCompare(rev);
+
+            if(check==0){
+                document.write("The string is a palindrome");
+            }
+            else{
+                document.write("The string is not a palindrome");
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
