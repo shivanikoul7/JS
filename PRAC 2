@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+</head>
+<body>
+    <h2>Multiplication table calculation</h2>
+    Enter number :
+    <input type="text" id="num"/><br>
+    Till what number :
+    <input type="text" id="val"/><br>
+
+    <h2>Calculate using</h2><br>
+    Using for loop :
+    <input type="button" value="For loop" onclick="forLoop()"/><br>
+    Using while loop :
+    <input type="button" value="While loop" onclick="whileLoop()"/><br>
+    Using do while loop :
+    <input type="button" value="Do while loop" onclick="doWhileLoop()"/><br>
+
+    <script>
+        function forLoop(){
+            var no=document.getElementById("num").value;
+            var va=document.getElementById("val").value;
+
+            for(i=1;i<=va;i++){
+                document.write(no+"x"+i+"="+no*i);
+                
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
