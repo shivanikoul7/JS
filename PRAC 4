@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Enter two strings :</h2>
+    Enter String 1 :
+    <input type="text" id="string1"/>
+    Enter String 2 :
+    <input type="text" id="string2"/>
+    <h2>Methods to compare two strings</h2>
+    By locale compare :
+    <input type="button" value="LoComp" onclick="LocaleCompare()"/>
+    By Strict Equality :
+    <input type="button" value="StrEq" onclick="StrictEquality()"/>
+
+
+    <script>
+        function LocaleCompare(){
+            var str=document.getElementById("string1").value;
+            var str2=document.getElementById("string2").value;
+            var str3=str.localeCompare(str2);
+            document.write(str3);
+
+        }
+        function StrictEquality(){
+            var str11=document.getElementById("string1").value;
+            var str12=document.getElementById("string2").value;
+            if(str11===str12){
+                document.write("Similar");
+            }
+            else{
+                document.write("not similar");
+            
+            }
+
+        }
+    </script>
+</body>
+</html>
