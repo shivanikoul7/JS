@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+
+check object is an array
+
+</title>
+
+</head>
+
+<body>
+
+<p>This is the content datatye is checked.</p>
+
+<p>1.PUNE</p> <p>2. [1, 2, 3, 4] </p>
+
+<p> 3.name:"Ram', age:20)</p>
+
+< p > 4 . Date()</p> < p > 5 function () <p>
+
+< p>6. job </p>
+
+<p> 7.null; </p> <p id I=^ prime prime GF G^ prime prime ></D^ 2
+
+<p>
+
+Click on button to check for array
+
+</p>
+
+<button onclick="myFunction()">
+
+Try it
+
+</button>
+
+<script>
+
+document.getElementById("GFG").innerHTML#peof "PUNE"- typeof [1, 2, 3, 4] +"<br>"+
+
+typeof {name:'Ram', age:201+br>"+ typeof new Date() + "<br+
+
+typeof function (H+"<br>"+ typeof job + "<br>" +typeof null;
+
+function myFunction(){
+
+alert("Arrayl is: "+aml);
+
+let arrl-[0, 1, 2, 3]: let arr2-[4, 5, 6, 7]: alert("Array2 is: "+am2); arr2.push(10); vard Object.assign(target, arr1):
+
+arr1.push(arr2);
+
+var str "pvgcoct": const target (a: 1, b: 2, c: 3);
+
+var e= Object.assign(arrl,target); var f= Object.assign(arr1,str):
+
+alert("Modified Arrayl is using object.assign: "+ arrl); alert("After pushing 10 into array2: "+arr2):
+
+// It returns false as the object passed is String not an array
+
+document.write("Modified Arrayl is: "+amri + "<br>"); document.write("Modified Array2 is: "+ar2+ "<br>");
+
+"<br>");
+
+document.write("Given array is array is or not: "+ Array.isArray(arr)+ document.write("Given array is array2 is or not:" + Array.isArray(arr2)+
+
+document.write("Using Object assign passsing object into array: "+d+ +Array.isArray(d)+ "<br>");
+
+document.write("Using Object.assign passing array values into object: "+e document.write("Using Object.assign passing array value into string: +Array.isArray() + "<br>");
+
+"Array.isArray(e)+ "<br>");
+
+document.write("Checking array of "Hello pygeoer Array is ArrayChello
+
+pvgcoet')).
+
+</script> </body>
+
+</html>
